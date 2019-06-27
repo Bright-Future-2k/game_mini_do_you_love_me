@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game_mini</title>
+<meta http-equiv="content-type">
+    <script type="text/javascript"></script>
+</head>
+<body>
+<h1>Do you love me ?</h1>
+<input type="button" onclick="yesClick()" value="YES">
+<input type="button" id="btnNo" style="left: 80px; top: 80px; position: absolute" onmouseover="noClick()" value="NO" onmouseover="noHover()">
+<script>
+    function yesClick() {
+        alert(" I love you, too");
+    }
+    function noClick() {
+        let x = Math.round(Math.random()*window.innerWidth);
+        let y = Math.round(Math.random()*window.innerHeight);
+        document.getElementById('btnNo').style.left = x + 'px';
+        document.getElementById('btnNo').style.top = y + 'px';
+    }
+</script>
+</body>
+</html>
